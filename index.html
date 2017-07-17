@@ -12,23 +12,40 @@
 <div class="container mt-4">
     <h1 class="display-4 text-center">
         <i class="fas fa-book-open text-primary"></i>
-        My <span class="text-secondary">Note</span>List</h1> </h1>
+         <span class="text-secondary">Note</span>App</h1> </h1>
         <form id="list-form">
             <div class="form-group">
                 <label for="title">To-do</label>
                 <input type="text" id="title" class="form-control">
             </div>
             <div class="form-group">
-                <label for="subject">Subject</label>
-                <input type="text" id="subject" class="form-control">
+                <label for="type">Subject</label>
+                <input type="text" id="type" class="form-control">
             </div>
             <div class="form-group">
-                <label for="date1">Date</label>
-                <input type="date" id="date1" class="form-control" >
+                <label for="date">Date</label>
+                <input type="date" id="date" class="form-control" >
             </div>
+            <input type="submit" value="Add Entry" class="btn btn-primary btn-block">
         </form>
+        <table class="table table-striped mt-5">
+            <thead>
+              
+                <tr>
+                    <th>Task</th>
+                    <th>Type</th>
+                    <th>Date</th>
+                    <th></th>
+                    
+    
+                </tr>
+            </thead>
+            <tbody id="task-list"></tbody>
+        </table>
 
     
 </div>
+
+<script src="app.js"></script>
     </body>
 </html>
